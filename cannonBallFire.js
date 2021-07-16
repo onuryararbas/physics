@@ -1,8 +1,9 @@
-/*
-This code serves to show how far a cannonball can go (in absence of air resistance)
 
 
-*/
+timeForfreeFall(20);
+
+
+
 function fireNoRes(v0, angle, maxHeight){
     //use the y dimension of cannonball travel to solve for time
     //plug in time to find the distance traveled
@@ -23,6 +24,10 @@ function fireNoRes(v0, angle, maxHeight){
     ", Angle of fire " + angle + " and max Height " + maxHeight + 
     ", the distance travelled in the x direction is " + dist);
 
+}
 
+function timeForfreeFall(h){
+    let g = 9.81; 
     
+   console.log("It will take you " + Math.sqrt((2*h)/g) + " seconds to hit the ground from " + h + " height (meters)");
 }
